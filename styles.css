@@ -1,4 +1,4 @@
-/*Background: #F2F1E8
+/*Background: Background: #F2F1E8
 Text: #131511
 Inline Link: #968772
 Inline Link (Hover): #967343
@@ -14,3 +14,78 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700%7CRoboto:300,300i,400,400i');
+
+body{
+	background-color: #F2F1E8;
+}
+
+#main-navigation #logo{
+    margin-right: 400px;
+   
+
+}
+
+#img{
+    max-width: 200%;
+    padding: 0;s
+    margin: 0;
+    display: box;
+}
+h1{
+	color:  #131511;
+	}
+
+/* ABOUT PAGE*/
+
+#indexbody{
+	margin: 50px;
+}	
+
+#showcase{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#image1{
+	width: 700px;
+	height: 300px;
+	padding-bottom: 10px;
+}
+
+#image6{
+	width: 450px;
+	height:200px;
+}
+
+#image2, #image3{
+	width: 250px;
+	height: 300px;
+}
+
+#image4, #image5, #image7{
+	width: 250px;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
