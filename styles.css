@@ -13,32 +13,97 @@ Button Text (Hover): #FFFFFF
 Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700%7CRoboto:300,300i,400,400i');
 
 body{
 	background-color: #F2F1E8;
+	color: #131511;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: lighter; /*THIS DOES NOTHING*/
 }
+
 
 #main-navigation #logo{
     margin-right: 400px;
-   
+
+}
+#main-navigation{
+	color: #2B2F26;
+	background-color: #FFFFFF;
+}
+
+/*
+I DONT THINK THIS IS WHAT WAS MENT TO HAPPEN< I THINK IT IS JUST SUPPOSED TO BE THE TEXT????
+#main-navigation:hover{
+    background-color: #CD5D67;
+    color: white;*/
+}
+#site-header{
+	width: 100%;
+	position: fixed;
+	top:0px;
+	background-color: #F2F1E8;
 
 }
 
-#img{
-    max-width: 200%;
-    padding: 0;s
-    margin: 0;
-    display: box;
+main{
+	margin: 10px 300px 100px 300px;
+	width: 1000px;
 }
-h1{
-	color:  #131511;
+
+
+h1, h2{
+	text-align: center;
 	}
 
-/* ABOUT PAGE*/
+h4{
+	text-align: center;
+	color: red; 
+}	
+/*ABOUT PAGE*/
+
+#intro{
+	float: left;
+	margin: 120px 50px 50px 50px; /*THIS DOES NOTHING*/
+
+}
+
+.aboutimg{
+	width: 200px;
+	height: 200px;
+}
+
+#back3{
+	width: 100%;
+}
+
+thead{
+	background-color: white;
+	border: 1px solid black;
+}
+th {
+	border: 1px solid black;
+	padding: 15px;
+
+}
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td{
+	border: 1px solid black;
+	padding: 15px;
+}
+
+tr:nth-child(even) {background-color: white;
+}
+
+
+/* INDEX PAGE*/
 
 #indexbody{
-	margin: 50px;
+	margin: 120px 50px 50px 50px;
 }	
 
 #showcase{
@@ -69,7 +134,85 @@ h1{
 	height: 200px;
 }
 
+#site-footer{
+	background-color: black;
+	margin: 100px;
+	padding: 20px;
+	color: white;
+	width: 100%;
+}
 
+/*NEWSLETTER PAGE*/
+
+
+
+#news div{
+	background-color:white;
+	margin: 50px;
+	width: auto;
+}
+#navbody{
+	background-image: url(../week-one-project/images/background-2.jpg);
+	background-size: cover;
+}
+form{
+	background-color: black;
+	/*padding: 10px;*/
+	width: 700px;
+	margin: auto;
+}
+
+input[type=submit]{
+	background-color:  #968772;
+	padding: 10px;
+	font-size: 10px;
+	color:#F2F1E8;
+	padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover {
+    background-color: #967343;
+    color: #FFFFFF;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 8px 0;
+    line-height: 40px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #968772;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #967343;
+}
+
+input[type=email]:focus {
+    border: 3px solid #967343;
+}
+
+input[type=email] {
+    width: 100%;
+    margin: 8px 0;
+    line-height: 40px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #968772;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
 
 
 
