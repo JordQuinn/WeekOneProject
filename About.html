@@ -2,22 +2,26 @@
 <html>
 	<head>
 		<title>Bent Creek Ceramics-About</title>
-		 <meta charset="utf-8">
-	     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	     <link href="styles.css" rel="stylesheet"> 
+		<meta charset="utf-8">
+	    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	    <link href="styles.css" rel="stylesheet"> 
+	  	<meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 	   	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i" rel="stylesheet"> 
 	   	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
 	</head>
 
 	<body>
 		<div class="master">
-		    <header id="site-header">
-		        <nav id="main-navigation">
-		        <img src="../week-one-project/images/bent-creek-logo.png" alt="Logo">
-		         	<a href="about.html" id="logo"</a>
-		            <a href="index.html">HOME</a>
-		            <a href="about.html">ABOUT</a>
-		            <a href="newsletter.html">NEWSLETTER</a>
+			<header id="site-header">
+				<img id="logo" src="../week-one-project/images/bent-creek-logo.png" alt="Logo">
+		        	<nav id="main-navigation">
+		        	<ul>	
+		         		<li><a href="index.html">HOME</a></li>	
+		            	<li><a href="about.html">ABOUT</a></li>
+		            	<li><a href="newsletter.html">NEWSLETTER</a><li>
+		        	</ul>     
 		        </nav>
 			</header>
 		    <main>
@@ -26,26 +30,37 @@
 		    		<img src="../week-one-project/images/birdhouse.jpg" class="aboutimg">
 		    		<p>Our studio, established in 1989, has been providing local artists with a <a href="#Facilities">dedicated evironment</a> for creativity for 20+ years. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
-		    		<p><q><em>Our mission is to provide people with beautiful, functional items which enhance lives.</q><br>-Jenn Wilson (Founder)</em></p>
+
+				<div class="w3-panel w3-leftbar #F2F1E8 ">  
+                 	<p class="w3-medium w3-serif">
+                  	<i>"Our mission is to provide people with beautiful, functional items which enhance lives."
+                  	<br />-Jenn Wilson (Founder)</i></p>
+                 </div>
 
 					<h3>History</h3>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
 		    	</intro>
 
-		    	<picsep>
-		    		<h4>Room to Grow</h4>
+		    	<div class="pic_container">
 		    		<img src="../week-one-project/images/background-3.jpg" id="back3">
-		    	</picsep>
+  				<div class="center">Room to Grow</div>
+				</div>
 
-		    	<facility>
-		    		<img src="../week-one-project/images/background-1.jpg" class="aboutimg">
+		    	<div id="facility">
+		    		<div id="fac_container">
+			    		<img src="../week-one-project/images/background-1.jpg" id="fac_cont_pic">
+		    			<p>Every member has access to shelf space and all of the studio's shared equipment.</p>
+		    		</div>
+		    		
 		    		<h3><a name="Facilities"><a/>Facilities</h3>
+
+
+
 		    		<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+		    		
+		    	</div>
 
-		    		<P>Every member has access to shelf space and all of the studio's shared equipment.</P>
-		    	</facility>
-
-		    	<Plans>
+		    	<div id="plans">
 		    		<h3>Monthly Plans</h3>
 			    	<table>
 			            <thead>
@@ -73,7 +88,7 @@
 			                </tr>
 			            </tbody>
 			        </table>
-		        </Plans>
+		        </div>
 		    </main>
 		 	<footer id="site-footer">
             	<span>Copyright 2017, Bent Creek Ceramics</span>

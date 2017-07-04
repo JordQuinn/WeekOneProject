@@ -18,36 +18,47 @@ body{
 	background-color: #F2F1E8;
 	color: #131511;
 	font-family: 'Merriweather', sans-serif;
-	font-weight: lighter; /*THIS DOES NOTHING*/
+	font-weight: 100;
 }
 
 
-#main-navigation #logo{
-    margin-right: 400px;
+#logo{
+    float: left;
+    width: 50px;
 
 }
 #main-navigation{
-	color: #2B2F26;
-	background-color: #FFFFFF;
+	font-family: "merriweather";
+	font-size:18px;
+	
 }
 
-/*
-I DONT THINK THIS IS WHAT WAS MENT TO HAPPEN< I THINK IT IS JUST SUPPOSED TO BE THE TEXT????
-#main-navigation:hover{
-    background-color: #CD5D67;
-    color: white;*/
+#main-navigation a:hover{
+    color: #CD5D67;
 }
+
 #site-header{
 	width: 100%;
 	position: fixed;
 	top:0px;
-	background-color: #F2F1E8;
+	color: #2B2F26;
+	background-color: #FFFFFF;
+}
+
+ul{
+	list-style-type: none;
+	text-align: center;
 
 }
 
-main{
-	margin: 10px 300px 100px 300px;
-	width: 1000px;
+li{
+	display: inline;
+	margin: 0px 25px 0px 25px;
+}
+
+
+a{
+	text-decoration: none;
 }
 
 
@@ -55,25 +66,67 @@ h1, h2{
 	text-align: center;
 	}
 
-h4{
-	text-align: center;
-	color: red; 
-}	
+
+
 /*ABOUT PAGE*/
+
+main{
+	margin: 100px 50px 50px 50px;
+	border:solid blue 5px;
+	justify-content: center;
+	width: 90%;
+}
+
 
 #intro{
 	float: left;
-	margin: 120px 50px 50px 50px; /*THIS DOES NOTHING*/
+	margin: 50px 180px 20px 180px;
+	padding: 100px;
+	width: auto;
+	border:solid red 5px; 
+	font-size: 22px;
 
+}
+#intro h1{
+	font-size: 60px;
+}
+
+.pic_container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: purple;
 }
 
 .aboutimg{
 	width: 200px;
-	height: 200px;
+	float: left;
+	margin: 20px;
 }
 
 #back3{
 	width: 100%;
+	height:auto;
+}
+
+#facility{
+	border:orange solid 5px;
+	margin: 50px 180px 20px 180px;
+	padding: 100px;
+	width: auto;
+	font-size: 22px;
+}
+#fac_cont_pic{
+	width: 200px;
+	float: right;
+	margin: 10px;
+
 }
 
 thead{
@@ -104,63 +157,81 @@ tr:nth-child(even) {background-color: white;
 
 #indexbody{
 	margin: 120px 50px 50px 50px;
+	border: solid green 5px;
+
 }	
 
-#showcase{
-	display: flex;
-	flex-wrap: wrap;
+
+
+.image-row1 img {
+  height: 200px;
+  justify-content: space-between;
+
+}
+
+.image-row2 img {
+  height: 100px;
+  width: auto;
+}
+
+/*images not covering the page & Scroll does't work*/
+.image-container{
+	display: inline-block;
 	justify-content: space-between;
+	position: relative;
+
 }
 
-
-#image1{
-	width: 700px;
-	height: 300px;
-	padding-bottom: 10px;
-}
-
-#image6{
-	width: 450px;
-	height:200px;
-}
-
-#image2, #image3{
-	width: 250px;
-	height: 300px;
-}
-
-#image4, #image5, #image7{
-	width: 250px;
-	height: 200px;
+.image-container h5 {
+  display: inline;
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  position:absolute;
+  font-size: 10px;
+  font-weight: lighter;
+  bottom: 5px;
+  left: 5px;
 }
 
 #site-footer{
 	background-color: black;
-	margin: 100px;
-	padding: 20px;
+	padding: 15px;
 	color: white;
 	width: 100%;
 }
 
 /*NEWSLETTER PAGE*/
 
+.contact_details h2{
+	font-size: 19px;
+	font-weight: lighter;
+}
+.contact_details h1{
+	font-size:32px;
+	font-weight: lighter;
+}
 
-
-#news div{
-	background-color:white;
-	margin: 50px;
+div#news{
+	margin: 150px;
 	width: auto;
+
 }
 #navbody{
 	background-image: url(../week-one-project/images/background-2.jpg);
 	background-size: cover;
 }
 form{
-	background-color: black;
-	/*padding: 10px;*/
-	width: 700px;
+	background-color: white;
+	padding: 20px;
+	width: 600px;
 	margin: auto;
 }
+
+.button{
+	text-align: center;
+}
+
 
 input[type=submit]{
 	background-color:  #968772;
