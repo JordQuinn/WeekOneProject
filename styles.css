@@ -19,6 +19,9 @@ body{
 	color: #131511;
 	font-family: 'Merriweather', sans-serif;
 	font-weight: 100;
+	padding: 0;
+	margin:0;
+
 }
 
 
@@ -37,12 +40,27 @@ body{
     color: #CD5D67;
 }
 
+/*THES DO NOTHING
+#main-navigation a:link {
+    color: yellow;
+
+} 
+
+#main-navigation a:active{
+    color: 968772;
+
+} 
+
+*/
+
+
 #site-header{
 	width: 100%;
 	position: fixed;
 	top:0px;
 	color: #2B2F26;
 	background-color: #FFFFFF;
+	z-index: 100;
 }
 
 ul{
@@ -64,71 +82,72 @@ a{
 
 h1, h2{
 	text-align: center;
+
 	}
 
 
 
 /*ABOUT PAGE*/
 
-main{
+#container{
 	margin: 100px 50px 50px 50px;
-	border:solid blue 5px;
 	justify-content: center;
-	width: 90%;
+	width: 100
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 100;
 }
 
-
-#intro{
-	float: left;
-	margin: 50px 180px 20px 180px;
-	padding: 100px;
-	width: auto;
-	border:solid red 5px; 
-	font-size: 22px;
-
-}
-#intro h1{
+#top h1{
 	font-size: 60px;
 }
 
+.top, .bottom{
+	width:1000px;
+	margin:auto;
+}
+
+
+.top img {
+	float:left;
+	margin:0 10px 10px 0;
+	width: 150px;
+}
+
+.pic_container h2 {
+	text-align:center;
+	color: white;
+	font-size: 60px;
+	margin-top: 100px;
+}
 .pic_container {
-    position: relative;
+	width:auto;
+	padding:100px 0;	
+	background-image:url("../week-one-project/images/background-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    color: purple;
-}
-
-.aboutimg{
-	width: 200px;
-	float: left;
-	margin: 20px;
-}
-
-#back3{
-	width: 100%;
-	height:auto;
-}
-
-#facility{
-	border:orange solid 5px;
-	margin: 50px 180px 20px 180px;
-	padding: 100px;
-	width: auto;
-	font-size: 22px;
-}
-#fac_cont_pic{
-	width: 200px;
+aside img{
 	float: right;
-	margin: 10px;
-
+	width: 150px;
 }
 
+.bottom aside {
+	float:right;
+	width: 150px;
+	font-size:15px;
+}
+#plans {
+	clear:both;
+
+}
+#plans{
+	width:auto;
+
+}
 thead{
 	background-color: white;
 	border: 1px solid black;
@@ -138,10 +157,13 @@ th {
 	padding: 15px;
 
 }
+
 table{
 	border: 1px solid black;
 	border-collapse: collapse;
-	width: 100%;
+	width: 80%;
+	margin:0,100px,50px,0;
+
 }
 
 td{
@@ -157,24 +179,78 @@ tr:nth-child(even) {background-color: white;
 
 #indexbody{
 	margin: 120px 50px 50px 50px;
-	border: solid green 5px;
-
 }	
-
-
-
-.image-row1 img {
-  height: 200px;
-  justify-content: space-between;
+#indexbody h1, h2{
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 100;
 
 }
 
-.image-row2 img {
-  height: 100px;
-  width: auto;
+.image-row1, .image-row2 {
+	display:flex;
+	justify-content: center;
 }
 
-/*images not covering the page & Scroll does't work*/
+#image1 {
+	background:url(../week-one-project/images/product-1.jpg) no-repeat;
+	width: 610px;
+	height:400px;
+	margin: 5px;
+	background-size:cover;
+}
+
+#image2 {
+	background:url(../week-one-project/images/product-2.jpg) no-repeat;
+	width:200px;
+	height:400px;
+	margin: 5px;
+	background-size:cover;
+
+}
+
+#image3 {
+	background:url(../week-one-project/images/product-3.jpg) no-repeat;
+	width:200px;
+	height:400px;
+	margin: 5px;	
+	background-size:cover;
+
+}
+
+#image4 {
+	background:url(../week-one-project/images/product-4.jpg) no-repeat;
+	width:200px;
+	height:200px;
+	margin: 5px;	
+	background-size:cover;
+}
+
+#image5 {
+	background:url(../week-one-project/images/product-5.jpg) no-repeat;
+	width:200px;
+	height:200px;
+	margin: 5px;
+	background-size:cover;
+
+}
+
+#image6 {
+	background:url(../week-one-project/images/product-6.jpg) no-repeat;
+	width:400px;
+	height:200px;
+	margin: 5px;	
+	background-size:cover;
+}
+
+#image7 {
+	background:url(../week-one-project/images/product-7.jpg) no-repeat;
+	width:200px;
+	height:200px;
+	margin: 5px;	
+	background-size:cover;
+}
+
+
 .image-container{
 	display: inline-block;
 	justify-content: space-between;
@@ -233,10 +309,11 @@ form{
 }
 
 
+
 input[type=submit]{
 	background-color:  #968772;
 	padding: 10px;
-	font-size: 10px;
+	font-size: 15px;
 	color:#F2F1E8;
 	padding: 16px 32px;
     text-decoration: none;
@@ -245,6 +322,8 @@ input[type=submit]{
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
+
+/*THE TEXT DOESN'T CHANGE COLOR*/
 
 input[type=submit]:hover {
     background-color: #967343;
